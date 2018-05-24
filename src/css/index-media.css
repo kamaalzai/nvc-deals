@@ -1,0 +1,12 @@
+
+/* ------------------------------
+    N A V I G A T I O N  B A R 
+   -------------------------------*/
+
+@media only screen and (max-width:99px){
+    .logo--area , .search--bar , .shoping--action{
+        margin:0em 1em 0em 1em;
+        background: teal!important;
+    }
+    
+}

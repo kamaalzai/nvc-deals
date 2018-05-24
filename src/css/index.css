@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+@font-face{
+    src:url("../fonts/GoogleSans-Regular.ttf");
+    font-family:"Google Sans";
+}
+
+/* ------------------------------------
+    G L O B A L  S T Y L E  R U L E S
+    -----------------------------------*/
+
+*{
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+body , html{
+    margin:0;
+    padding:0;
+    color:#232323;
+}
+
+/* ------------------------------
+    N A V I G A T I O N  B A R 
+   -------------------------------*/
+
+nav{
+    position: relative;
+    width:100%;
+    padding:0.8em 0em 0.8em 0em;
+    background:#512da8;
+}
+
+.logo--area , .search--bar , .shoping--action{
+    position: relative;
+    display:inline-block;
+    vertical-align: middle;
+    margin:0em 1.5em 0em 1.5em;
+    border:1px solid tomato;
+}
+
+.logo--area h3{
+    font-family:"Audiowide";
+    text-transform: uppercase;
+    margin:0;
+    font-weight: bold;
+    color:#fff;
+    letter-spacing: 0.07em;
+}
+
+.search--bar{
+    width:50%;
+    background:#fff;
+    border-radius: 4px;
+}
+
+.search--bar input,
+.search--bar button{
+    background:transparent;
+    border:none;
+    padding:0.8em;
+    outline-color: #512da8;
+    font-family: "Google Sans",sans-serif;
+}
+
+.search--bar input{
+    position: relative;
+    width:100%;
+    outline:none;
+    padding-right:3.5em;
+    padding-left:1em;
+}
+
+.search--bar button{
+    position: absolute;
+    right:0;
+    top:0;
+    border-left:2px solid #f1f3f6;
+}
+
+.shoping--action{
+    color:#fff;
+}
+
+.shoping--action > span{
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    padding:0.5em;
+    margin:0 0.3em 0 0.3em;
+    border-radius: 4px;
+    background:transparent;
+    transition:background 300ms ease 0s;
+}
+
+.shoping--action span >  span{
+    display: block;
+    margin-top:0.3em;
+    font-family:"Google Sans",sans-serif;
+    text-transform: capitalize;
+}
+
+.shoping--action > span:hover{
+    background:rgba(255,255,255,0.25);
+}
