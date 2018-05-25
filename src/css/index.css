@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 @font-face{
     src:url("../fonts/GoogleSans-Regular.ttf");
@@ -18,7 +19,11 @@
 body , html{
     margin:0;
     padding:0;
-    color:#232323;
+}
+
+a,a:active,a:hover{
+    text-decoration: none!important;
+    color:unset;
 }
 
 /* ------------------------------
@@ -122,19 +127,28 @@ nav{
     font-family: "Google Sans",sans-serif;
 }
 
+.search--bar input::-webkit-input-placeholder{
+    color:#6a85a6;
+}
+
 .search--bar input{
     position: relative;
     width:100%;
     outline:none;
     padding-right:3.5em;
     padding-left:1em;
+    color:#4b5d73;
+    font-size:1.1em;
+    line-height: 0; /*ye check kr phr dek*/
 }
 
 .search--bar button{
     position: absolute;
     right:0;
     top:0;
+    bottom:0;
     border-left:2px solid #f1f3f6;
+    color:#6a85a6;
 }
 
 .shoping--action{
@@ -166,3 +180,30 @@ nav{
 .shoping--action > span:hover{
     background:rgba(255,255,255,0.25);
 }
+
+#nav--links{
+    position: relative;
+    width:100%;
+    list-style: none;
+    text-align: center;
+    padding:1.4em 0em 1.4em 0em;
+    /*box-shadow: 40px 0 25px 0 rgba(200,219,239,.7);*/
+    box-shadow: 0 10px 20px #eee, 0 6px 6px #d5d5d5;    
+}
+
+#nav--links li{
+    position: relative;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: "Google Sans",sans-serif;
+    font-size:1.2em;
+    margin:0 1em 0 1em;
+    color: #6a85a6;
+    font-weight: 500;
+    transition: color 300ms ease 0s;
+}
+
+#nav--links li:hover{
+    color:#512da8;
+}
+
