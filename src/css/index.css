@@ -191,19 +191,47 @@ nav{
     box-shadow: 0 10px 20px #eee, 0 6px 6px #d5d5d5;    
 }
 
-#nav--links li{
-    position: relative;
+#nav--links > li{
     display: inline-block;
     text-transform: capitalize;
     font-family: "Google Sans",sans-serif;
     font-size:1.2em;
     margin:0 1em 0 1em;
-    color: #6a85a6;
     font-weight: 500;
     transition: color 300ms ease 0s;
 }
 
-#nav--links li:hover{
+#nav--links >  li > a{
+    color: #6a85a6;
+}
+
+#nav--links > li:hover > a{
     color:#512da8;
+}
+
+.nav--dropdown{
+    position: absolute;
+    width:80%;
+    left:50%;
+    transform:translateX(-50%);
+    border:1px solid blue;
+    top:100%;
+    border-radius: 4px;
+}
+
+.categories , .categories--details{
+    position: relative;
+    height:100%;
+    float:left;
+}
+
+.categories{
+    width:30%;
+    border:1px solid salmon;
+}
+
+.categories--details{
+    width:70%;
+    border:1px solid teal
 }
 
